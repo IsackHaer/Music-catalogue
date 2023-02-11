@@ -1,5 +1,6 @@
 package com.example.musiccatalogueapp.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,6 +35,7 @@ class SongAdapter: RecyclerView.Adapter<SongAdapter.ItemViewHolder>() {
     }
 
     override fun getItemCount(): Int {
+        Log.d("SongAdapter", "${dataset.size}")
         return dataset.size
     }
 
